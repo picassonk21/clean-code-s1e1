@@ -4,34 +4,34 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.header-logo {
     width: 100%;
 }
-.aaa .more_inf {
+.header-about {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.header { text-align: center;
 }
 }
-.centered-main-page-element {
+.app {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.app__add-form__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.app__add-form {
     display: flex;
 }
 ul {
@@ -105,11 +105,12 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
 li > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+li > input[type="checkbox"] > * {
     margin: 0 10px;
 }
 li > label {
@@ -118,18 +119,18 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
-li > button.delete:hover {
+li > button.remove-btn:hover {
     color: #CF2323;
 }
-button.delete img {
+button.remove-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.remove-btn img:hover {
     transform: rotateZ(0);
 }
 
@@ -144,11 +145,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
     display:none;
 }

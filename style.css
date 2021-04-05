@@ -33,7 +33,7 @@ body {
 .add__form-input {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .add__form {
@@ -139,7 +139,7 @@ button:hover {
 }
 
 .task__list-item__input {
-    width: 226px
+    width: 226px;
 }
 
 .remove-btn:hover {
@@ -159,19 +159,19 @@ button:hover {
 /* Completed */
 
 #completed-tasks .task__list-item__value {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 
 .task__list-item__input {
-    display: none
+    display: none;
 }
 
 .task__list-item.edit-mode .task__list-item__input {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .task__list-item.edit-mode .task__list-item__value {

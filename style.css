@@ -26,19 +26,19 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
-.app__add-form__input {
+.add__form-input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.app__add-form {
+.add__form {
     display: flex;
 }
-ul {
+.task__list {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.task__list-item, .section__subtitle {
     list-style:none;
 }
 input,button{
@@ -57,8 +57,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.section__subtitle, .add__form-name {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -67,7 +66,7 @@ label[for="new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.add__form-input, .task__list-item__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,24 +78,24 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.add__form-input:focus, .task__list-item__input:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.add__form-name {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
-p > button:hover {
+.add-btn:hover {
     color: #0FC57C;
 }
 
 /* Task list */
-li {
+.task__list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -106,50 +105,50 @@ li {
     align-items: center;
 }
 
-li > * {
+.task__list-item > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] > * {
+.switch-btn > * {
     margin: 0 10px;
 }
-li > label {
+.task__list-item__value {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li > input[type="text"] {
+.task__list-item__input {
     width: 226px
 }
-li > button.remove-btn:hover {
+.remove-btn:hover {
     color: #CF2323;
 }
-button.remove-btn img {
+.remove__btn-logo {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.remove-btn img:hover {
+.remove__btn-logo:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks .task__list-item__value {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.task__list-item__input {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.task__list-item.edit-mode .task__list-item__input {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.task__list-item.edit-mode .task__list-item__value {
     display:none;
 }

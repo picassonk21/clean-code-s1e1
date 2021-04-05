@@ -31,13 +31,13 @@ body {
     margin: 0 auto 0;
 }
 
-.add__form-input {
+.app__form-input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
 
-.add__form {
+.app__form {
     display: flex;
 }
 
@@ -73,7 +73,7 @@ button:hover {
 /* Heading */
 
 .section__subtitle, 
-.add__form-name {
+.app__form-name {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,7 +83,7 @@ button:hover {
     text-transform: uppercase;
 }
 
-.add__form-input, 
+.app__form-input, 
 .task__list-item__input {
     margin: 0;
     font-size: 18px;
@@ -97,14 +97,14 @@ button:hover {
     color: #888;
 }
 
-.add__form-input:focus,
+.app__form-input:focus,
 .task__list-item__input:focus {
     color: #333;
 }
 
 /* New Task */
 
-.add__form-name {
+.app__form-name {
     display: block;
     margin: 0 0 20px;
 }
@@ -113,7 +113,7 @@ button:hover {
     width: 318px;
 }
 
-.add-btn:hover {
+.app__form-btn:hover {
     color: #0FC57C;
 }
 

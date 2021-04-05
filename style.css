@@ -41,16 +41,16 @@ body {
 }
 
 .task__list {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 .task__list-item, .section__subtitle {
-    list-style:none;
+    list-style: none;
 }
 
 input, button{
-    outline:none;
+    outline: none;
 }
 
 button {
@@ -166,14 +166,14 @@ button:hover {
 /* Edit Task */
 
 .task__list-item__input {
-    display:none
+    display: none
 }
 
 .task__list-item.edit-mode .task__list-item__input {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .task__list-item.edit-mode .task__list-item__value {
-    display:none;
+    display: none;
 }

@@ -20,8 +20,9 @@ body {
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
-}
+    .header { 
+        text-align: center;
+    }
 }
 
 .app {
@@ -45,11 +46,13 @@ body {
     padding: 0px;
 }
 
-.task__list-item, .section__subtitle {
+.task__list-item, 
+.section__subtitle {
     list-style: none;
 }
 
-input, button{
+input, 
+button{
     outline: none;
 }
 
@@ -69,7 +72,8 @@ button:hover {
 
 /* Heading */
 
-.section__subtitle, .add__form-name {
+.section__subtitle, 
+.add__form-name {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -79,7 +83,8 @@ button:hover {
     text-transform: uppercase;
 }
 
-.add__form-input, .task__list-item__input {
+.add__form-input, 
+.task__list-item__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -92,7 +97,8 @@ button:hover {
     color: #888;
 }
 
-.add__form-input:focus, .task__list-item__input:focus {
+.add__form-input:focus,
+.task__list-item__input:focus {
     color: #333;
 }
 
